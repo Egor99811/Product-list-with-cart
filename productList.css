@@ -1,0 +1,111 @@
+@import url(/shared/fonts.css);
+@import url(/shared/style.css);
+
+.product-list {
+    max-width: 800px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+@media(max-width: 768px) {
+    .product-list {
+        max-width: 688px;
+    }
+}
+
+@media(max-width: 375px) {
+    .product-list {
+        width: 100%;
+    }
+}
+
+.product-list__title {
+    font-family: text-preset-1;
+    color: var(--color-rose-900);
+    text-shadow: var(--main-shadow);
+}
+
+.product-list__row {
+    width: 100%;
+    height: 347px;
+    display: flex;
+    gap: 24px;
+}
+
+@media(max-width: 375px) {
+    .product-list__row {
+        height: 100%;
+        flex-direction: column;
+    }
+}
+
+.product-card {
+    width: 33.333%;
+    height: 347px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media(max-width: 375px) {
+    .product-card {
+        width: 100%;
+    }
+}
+
+.product-card__wrapper {
+    width: 100%;
+    height: 262px;
+    position: relative;
+
+    display: flex;
+}
+
+.product-card__img {
+    width: 100%;
+    height: 240px;
+    border-radius: var(--radius-8);
+    box-shadow: var(--main-shadow);
+    object-fit: cover;
+}
+
+.product-card__add-button-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 218px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-card__info {
+    height: 69px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card__info-name {
+    height: 19px;
+    font-family: text-preset-4;
+    text-shadow: var(--main-shadow);
+    color: var(--color-rose-500);
+}
+
+.product-card__info-description {
+    height: 21px;
+    font-family: text-preset-3;
+    text-shadow: var(--main-shadow);
+    color: var(--color-rose-900);
+}
+
+.product-card__info-price {
+    height: 19px;
+    font-family: text-preset-3;
+    color: var(--color-red);
+    text-shadow: var(--main-shadow);
+}

@@ -1,0 +1,58 @@
+@import url(shared/fonts.css);
+@import url(style.css);
+
+.modal-wrapper {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.order-confirmation-modal {
+    max-width: 592px;
+    height: auto;
+    padding: 40px 40px;
+    border-radius: var(--radius-12);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+
+    background-color: var(--color-white);
+}
+
+.title-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 24px
+}
+
+.title-info__title {
+    height: 48px;
+    font-family: text-preset-1;
+    color: var(--color-rose-900);
+}
+
+.title-info__subtitle {
+    height: 21px;
+    font-family: text-preset-4;
+    color: var(--color-rose-900);
+}
+
+.confirmed-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px 24px;
+}

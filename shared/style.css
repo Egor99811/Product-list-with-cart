@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+}
+
+:root {
+    --color-red: #C73B0F;
+    --color-dark-red: #C73B0F40;
+
+    --color-rose-900: #260F08;
+    --color-rose-500: #87635A;
+    --color-rose-400: #AD8A85;
+    --color-rose-300: #CAAFA7;
+    --color-rose-100: #F5EEEC;
+    --color-rose-50: #FCF8F6;
+
+    --color-green: #1EA575;
+
+    --color-black: #000;
+    --color-white: #fff;
+
+    --spacing-1100: 88px;
+    --spacing-500: 40px;
+    --spacing-400: 32px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+
+    --radius-999: 999px;
+    --radius-12: 12px;
+    --radius-8: 8px;
+
+    --main-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
