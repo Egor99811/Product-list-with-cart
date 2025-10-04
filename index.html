@@ -16,10 +16,10 @@
 <body>
     
 
-    <div class="container">
-        <main class="product-list">
+    <main class="container">
+        <ul class="product-list">
             <h1 class="product-list__title">Deserts</h1>
-            <div class="product-list__row">
+            <li class="product-list__row">
                 <div class="product-card">
                     <div class="product-card__wrapper">
                         <img src="imgs/itemImage.png" alt="image" class="product-card__img">
@@ -69,8 +69,8 @@
                         <span class="product-card__info-price">8$</span>
                     </section>
                 </div>
-            </div>
-            <div class="product-list__row">
+            </li>
+            <li class="product-list__row">
                 <div class="product-card">
                     <div class="product-card__wrapper">
                         <img src="imgs/itemImage3.png" alt="image" class="product-card__img">
@@ -119,8 +119,8 @@
                         <span class="product-card__info-price">4$</span>
                     </section>
                 </div>
-            </div>
-            <div class="product-list__row">
+            </li>
+            <li class="product-list__row">
                 <div class="product-card">
                     <div class="product-card__wrapper">
                         <img src="imgs/itemImage6.png" alt="image" class="product-card__img">
@@ -169,48 +169,48 @@
                         <span class="product-card__info-price">6.5$</span>
                     </section>
                 </div>
-            </div>                
-        </main>
+            </li>                
+        </ul>
         
         <section class="cart">
-            <span class="cart__title">Your Cart (0)</span>
-            <section class="order-list">
-                <div class="order-list__row">
-                    <div class="order-list__information-wrapper">
-                        <span class="order-list__name">Waffle</span>
-                        <div class="order-list__price-wrapper">
-                            <span class="order-list__item-counter">1</span>
-                            <span class="order-list__item-price">20$</span>
-                            <span class="order-list__item-total-price">20$</span>
+            <header class="cart__header">Your Cart (0)</header>
+            <ul class="order-list">
+                <li class="order-list__row">
+                    <div class="order-list-item">
+                        <span class="order-list-item__name">Waffle</span>
+                        <div class="order-list-item__price-wrapper">
+                            <span class="order-list-item__counter">1</span>
+                            <span class="order-list-item__price">20$</span>
+                            <span class="order-list-item__total-price">20$</span>
                         </div>
                     </div>
                     <button class="order-list__delete-button"></button>
-                </div>
+                </li>
                 <img src="icons/separator.png" alt="separator" class="separator"/>
-                <div class="order-list__row">
-                    <div class="order-list__information-wrapper">
-                        <span class="order-list__name">Vanilla Bean Crème Brûlée</span>
-                        <div class="order-list__price-wrapper">
-                            <span class="order-list__item-counter">4</span>
-                            <span class="order-list__item-price">7$</span>
-                            <span class="order-list__item-total-price">28$</span>
+                <li class="order-list__row">
+                    <div class="order-list-item">
+                        <span class="order-list-item__name">Vanilla Bean Crème Brûlée</span>
+                        <div class="order-list-item__price-wrapper">
+                            <span class="order-list-item__counter">4</span>
+                            <span class="order-list-item__price">7$</span>
+                            <span class="order-list-item__total-price">28$</span>
                         </div>
                     </div>
                     <button class="order-list__delete-button"></button>
-                </div>
+                </li>
                 <img src="icons/separator.png" alt="separator" class="separator"/>
-                <div class="order-list__row">
-                    <div class="order-list__information-wrapper">
-                        <span class="order-list__name">Vanilla Panna Cotta</span>
-                        <div class="order-list__price-wrapper">
-                            <span class="order-list__item-counter">2</span>
-                            <span class="order-list__item-price">6.5$</span>
-                            <span class="order-list__item-total-price">13$</span>
+                <li class="order-list__row">
+                    <div class="order-list-item">
+                        <span class="order-list-item__name">Vanilla Panna Cotta</span>
+                        <div class="order-list-item__price-wrapper">
+                            <span class="order-list-item__counter">2</span>
+                            <span class="order-list-item__price">6.5$</span>
+                            <span class="order-list-item__total-price">13$</span>
                         </div>
                     </div>
                     <button class="order-list__delete-button"></button>
-                </div>
-            </section>
+                </li>
+            </ul>
             <img src="icons/separator.png" alt="separator" class="separator"/>
             <section class="order-total">
                 <span>Order Total:</span>
@@ -222,6 +222,6 @@
             </section>
             <button class="button-primary">Confirm Order</button>
         </section>
-    </div>
+    </main>
 </body>
 </html>

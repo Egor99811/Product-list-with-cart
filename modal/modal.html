@@ -15,53 +15,53 @@
 </head>
 <body>
     <section class="modal-wrapper">
-        <section class="order-confirmation-modal">
-            <div class="title-info">
+        <div class="order-confirmation-modal">
+            <div class="order-confirmation-modal__header">
                 <img src="../icons/carbon_checkmark-outline.svg" alt="checkmark" />
                 <div>
-                    <span class="title-info__title"><h1>Order Confirmed</h1></span>
-                    <span class="title-info__subtitle">We hope you enjoy your food!</span>
+                    <h1 class="torder-confirmation-modal__header-title">Order Confirmed</h1>
+                    <span class="torder-confirmation-modal__header-subtitle">We hope you enjoy your food!</span>
                 </div>
             </div>
 
             <section class="order-table order-table_modal">
-                <section class="order-list">
-                    <div class="order-list__row">
-                        <div class="order-list__information-wrapper">
+                <ul class="order-list">
+                    <li class="order-list__row">
+                        <div class="order-list-item">
                             <img src="../imgs/itemImage.png" alt="image" class="order-list__img" />
-                            <span class="order-list__name">Waffle</span>
-                            <div class="order-list__price-wrapper">
-                                <span class="order-list__item-counter">1</span>
-                                <span class="order-list__item-price">@ 20$</span>
+                            <span class="order-list-item__name">Waffle</span>
+                            <div class="order-list-item__price-wrapper">
+                                <span class="order-list-item__counter">1</span>
+                                <span class="order-list-item__price">@ 20$</span>
                             </div>
                         </div>
-                        <span class="order-list__item-total-price_modal">20$</span>
-                    </div>
+                        <span class="order-list-item__total-price_modal">20$</span>
+                    </li>
                     <img src="../icons/separator.png" alt="separator" class="separator"/>
-                    <div class="order-list__row">
-                        <div class="order-list__information-wrapper">
+                    <li class="order-list__row">
+                        <div class="order-list-item">
                             <img src="../imgs/itemImage.png" alt="image" class="order-list__img" />
-                            <span class="order-list__name">Waffle</span>
-                            <div class="order-list__price-wrapper">
-                                <span class="order-list__item-counter">1</span>
-                                <span class="order-list__item-price">@ 20$</span>
+                            <span class="order-list-item__name">Waffle</span>
+                            <div class="order-list-item__price-wrapper">
+                                <span class="order-list-item__counter">1</span>
+                                <span class="order-list-item__price">@ 20$</span>
                             </div>
                         </div>
-                        <span class="order-list__item-total-price_modal">20$</span>
-                    </div>
+                        <span class="order-list-item__total-price_modal">20$</span>
+                    </li>
                     <img src="../icons/separator.png" alt="separator" class="separator"/>
-                    <div class="order-list__row">
-                        <div class="order-list__information-wrapper">
+                    <li class="order-list__row">
+                        <div class="order-list-item">
                             <img src="../imgs/itemImage.png" alt="image" class="order-list__img" />
-                            <span class="order-list__name">Waffle</span>
-                            <div class="order-list__price-wrapper">
-                                <span class="order-list__item-counter">1</span>
-                                <span class="order-list__item-price">@ 20$</span>
+                            <span class="order-list-item__name">Waffle</span>
+                            <div class="order-list-item__price-wrapper">
+                                <span class="order-list-item__counter">1</span>
+                                <span class="order-list-item__price">@ 20$</span>
                             </div>
                         </div>
-                        <span class="order-list__item-total-price_modal">20$</span>
-                    </div>
-                </section>
+                        <span class="order-list-item__total-price_modal">20$</span>
+                    </li>
+                </ul>
                 <img src="../icons/separator.png" alt="separator" class="separator"/>
                 <section class="order-total">
                     <span>Order Total:</span>
@@ -70,13 +70,13 @@
             </section>
 
             <button class="button-primary">Start New Order</button>
-        </section>
+        </div>
     </section>
 
-    <div class="container">
-        <main class="product-list">
+    <main class="container">
+        <ul class="product-list">
             <h1 class="product-list__title">Deserts</h1>
-            <div class="product-list__row">
+            <li class="product-list__row">
                 <div class="product-card">
                     <div class="product-card__wrapper">
                         <img src="../imgs/itemImage.png" alt="image" class="product-card__img">
@@ -125,8 +125,8 @@
                         <span class="product-card__info-price">20$</span>
                     </section>
                 </div>
-            </div>
-            <div class="product-list__row">
+            </li>
+            <li class="product-list__row">
                 <div class="product-card">
                     <div class="product-card__wrapper">
                         <img src="../imgs/itemImage.png" alt="image" class="product-card__img">
@@ -175,8 +175,8 @@
                         <span class="product-card__info-price">20$</span>
                     </section>
                 </div>
-            </div>
-            <div class="product-list__row">
+            </li>
+            <li class="product-list__row">
                 <div class="product-card">
                     <div class="product-card__wrapper">
                         <img src="../imgs/itemImage.png" alt="image" class="product-card__img">
@@ -225,48 +225,48 @@
                         <span class="product-card__info-price">20$</span>
                     </section>
                 </div>
-            </div>                
-        </main>
+            </li>                
+        </ul>
         
         <section class="cart">
-            <span class="cart__title">Your Cart (0)</span>
-            <section class="order-list">
-                <div class="order-list__row">
-                    <div class="order-list__information-wrapper">
-                        <span class="order-list__name">Waffle</span>
-                        <div class="order-list__price-wrapper">
-                            <span class="order-list__item-counter">1</span>
-                            <span class="order-list__item-price">20$</span>
+            <header class="cart__header">Your Cart (0)</header>
+            <ul class="order-list">
+                <li class="order-list__row">
+                    <div class="order-list-item">
+                        <span class="order-list-item__name">Waffle</span>
+                        <div class="order-list-item__price-wrapper">
+                            <span class="order-list-item__counter">1</span>
+                            <span class="order-list-item__price">20$</span>
                             <span class="order-list__item-total-price">20$</span>
                         </div>
                     </div>
                     <button class="order-list__delete-button"></button>
-                </div>
+                </li>
                 <img src="../icons/separator.png" alt="separator" class="separator"/>
-                <div class="order-list__row">
-                    <div class="order-list__information-wrapper">
-                        <span class="order-list__name">Vanilla Bean Crème Brûlée</span>
-                        <div class="order-list__price-wrapper">
-                            <span class="order-list__item-counter">4</span>
-                            <span class="order-list__item-price">7$</span>
+                <li class="order-list__row">
+                    <div class="order-list-item">
+                        <span class="order-list-item__name">Vanilla Bean Crème Brûlée</span>
+                        <div class="order-list-item__price-wrapper">
+                            <span class="order-list-item__counter">4</span>
+                            <span class="order-list-item__price">7$</span>
                             <span class="order-list__item-total-price">28$</span>
                         </div>
                     </div>
                     <button class="order-list__delete-button"></button>
-                </div>
+                </li>
                 <img src="../icons/separator.png" alt="separator" class="separator"/>
-                <div class="order-list__row">
-                    <div class="order-list__information-wrapper">
-                        <span class="order-list__name">Vanilla Panna Cotta</span>
-                        <div class="order-list__price-wrapper">
-                            <span class="order-list__item-counter">2</span>
-                            <span class="order-list__item-price">6.5$</span>
+                <li class="order-list__row">
+                    <div class="order-list-item">
+                        <span class="order-list-item__name">Vanilla Panna Cotta</span>
+                        <div class="order-list-item__price-wrapper">
+                            <span class="order-list-item__counter">2</span>
+                            <span class="order-list-item__price">6.5$</span>
                             <span class="order-list__item-total-price">13$</span>
                         </div>
                     </div>
                     <button class="order-list__delete-button"></button>
-                </div>
-            </section>
+                </li>
+            </ul>
             <img src="../icons/separator.png" alt="separator" class="separator"/>
             <section class="order-total">
                 <span>Order Total:</span>

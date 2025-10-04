@@ -2,18 +2,17 @@
 @import url(../style.css);
 
 .add-button {
-    width: 160px;
-    height: 44px;
-    border: 2px solid var(--color-rose-400);
-    border-radius: var(--radius-999);
-    box-shadow: var(--main-shadow);
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
     z-index: 1;
-    
+
+    width: 160px;
+    height: 44px;
+    border: 2px solid var(--color-rose-400);
+    border-radius: var(--radius-999);
+    box-shadow: var(--main-shadow);
     font-family: text-preset-4;
 }
 
@@ -24,27 +23,30 @@
 }
 
 .add-button-active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     width: 160px;
     height: 44px;
     padding: 12px 12px;
     border-radius: var(--radius-999);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    color: white;
+    color: var(--color-white);
     font-family: text-preset-4;
     background-color: var(--color-red);
 }
 
-.add-button-active__decrease-button {
+.add-button-active__decrease-button,
+.add-button-active__increase-button {
     height: 20px;
     width: 20px;
     border: none;
-    background-image: url('../icons/decreaseCartDefault.svg');
     background-color: var(--color-red);
+}
 
+.add-button-active__decrease-button {
+    background-image: url('../icons/decreaseCartDefault.svg');
 }
 
 .add-button-active__decrease-button:hover {
@@ -53,11 +55,7 @@
 }
 
 .add-button-active__increase-button {
-    height: 20px;
-    width: 20px;
-    border: none;
     background-image: url('../icons/increaseCartDefault.svg');
-    background-color: var(--color-red);
 }
 
 .add-button-active__increase-button:hover {

@@ -2,11 +2,12 @@
 @import url(style.css);
 
 .order-table {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 24px;
+
+    width: 100%;
 }
 
 .order-table_modal {
@@ -16,12 +17,12 @@
 }
 
 .order-list {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 16px;
 
+    width: 100%;
 }
 
 .order-list__img {
@@ -31,47 +32,49 @@
 }
 
 .order-list__row {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    width: 100%;
 }
 
-.order-list__information-wrapper {
-    height: 46px;
+.order-list-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    height: 46px;
 }
 
-.order-list__name {
+.order-list-item__name {
     height: 19px;
     font-family: text-preset-4;
     color: var(--color-rose-900)
 }
 
-.order-list__price-wrapper {
+.order-list-item__price-wrapper {
     height: 19px;
 }
 
-.order-list__item-counter {
+.order-list-item__counter {
     font-family: text-preset-4;
     color: var(--color-red);
 }
 
-.order-list__item-price {
+.order-list-item__price {
     font-family: text-preset-4;
     color: var(--color-rose-500);
 }
 
-.order-list__item-total-price {
+.order-list-item__total-price {
     font-family: text-preset-4;
     color: var(--color-rose-500);
     font-weight: bold;
 }
 
-.order-list__item-total-price_modal {
+.order-list-item__total-price_modal {
     font-family: text-preset-3;
     color: var(--color-rose-900);
 }
@@ -90,11 +93,12 @@
 }
 
 .order-total {
-    width: 100%;
-    height: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    width: 100%;
+    height: 32px;
     color: var(--color-rose-900);
     font-family: text-preset-4;
 }
