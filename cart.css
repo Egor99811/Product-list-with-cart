@@ -1,0 +1,63 @@
+@import url(/shared/fonts.css);
+@import url(/shared/style.css);
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    height: 100%;
+    max-width: 384px;
+    padding: 24px 24px;
+    border-radius: var(--radius-12);
+    
+    background-color: var(--color-white);
+}
+
+@media(max-width: 768px) {
+    .cart {
+        max-width: 688px;
+    }
+}
+
+.cart__header {
+    display: block;
+    width: 100%;
+    font-family: text-preset-4;
+    color: var(--color-red);
+}
+
+.cart__description {
+    display: block;
+    width: 100%;
+    font-family: text-preset-4;
+}
+
+.cart__img {
+    height: 128px;
+    width: 128px;
+    opacity: 100%;
+}
+
+
+
+.cart__carbon-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+    height: 52px;
+    width: 100%;
+    padding: 16px 16px;
+    background-color: var(--color-rose-50);
+}
+
+.cart__carbon-info-text {
+    height: 20px;
+    font-family: text-preset-4;
+    font-size: 14px;
+    color: var(--color-rose-900);
+}

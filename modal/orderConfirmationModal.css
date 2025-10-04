@@ -1,0 +1,50 @@
+@import url(shared/fonts.css);
+@import url(style.css);
+
+.modal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.order-confirmation-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+
+    max-width: 592px;
+    height: auto;
+    padding: 40px 40px;
+    border-radius: var(--radius-12);
+
+    background-color: var(--color-white);
+}
+
+.order-confirmation-modal__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 24px
+}
+
+.order-confirmation-modal__header-title {
+    height: 48px;
+    font-family: text-preset-1;
+    color: var(--color-rose-900);
+}
+
+.order-confirmation-modal__header-subtitle {
+    height: 21px;
+    font-family: text-preset-4;
+    color: var(--color-rose-900);
+}
